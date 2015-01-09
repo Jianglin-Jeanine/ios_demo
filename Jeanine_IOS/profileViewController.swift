@@ -25,7 +25,7 @@ class profileViewController: UIViewController {
         if currentUser != nil {
             
         } else {
-            self.performSegueWithIdentifier("profileToSignIn", sender: nil)
+
         }
     }
     

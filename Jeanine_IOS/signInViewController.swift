@@ -22,7 +22,7 @@ class signInViewController: UIViewController {
         var currentUser = AVUser.currentUser()
         if currentUser != nil {
             NSLog("Detected current user: %@", currentUser.username)
-            self.performSegueWithIdentifier("profileToMainView", sender: nil)
+            self.performSegueWithIdentifier("signInToMainView", sender: nil)
             NSLog("Redirecting to Profile Page")
         } else {
             NSLog("continue to sign in")
@@ -38,7 +38,7 @@ class signInViewController: UIViewController {
         AVUser.logInWithUsernameInBackground(usernameTextField.text, password: passwordTextField.text) { (user, error) -> Void in
             if user != nil {
                 NSLog("Signed In with user: %@", user.username)
-                self.performSegueWithIdentifier("profileToMainView", sender: nil)
+                self.performSegueWithIdentifier("signInToMainView", sender: nil)
                 NSLog("Redirecting to Profile Page")
             } else {
                 NSLog(error.localizedDescription)

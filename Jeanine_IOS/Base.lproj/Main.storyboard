@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="G2C-cC-Lz6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sq2-59-kxF">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -101,7 +101,7 @@
                     <connections>
                         <outlet property="passwordTextField" destination="7Qs-Fv-fD8" id="zvO-b5-Bn5"/>
                         <outlet property="usernameTextField" destination="jSw-8t-JLs" id="9JW-Cc-JGR"/>
-                        <segue destination="XIA-7b-9wm" kind="show" identifier="signInToProfile" id="BNV-di-786"/>
+                        <segue destination="XIA-7b-9wm" kind="show" identifier="signInToMainView" id="BNV-di-786"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9eX-he-UN1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -371,10 +371,22 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="157" y="401" width="55" height="30"/>
+                                    <rect key="frame" x="98" y="401" width="55" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="signUpSubmit:" destination="HfS-uF-8va" eventType="touchUpInside" id="4hS-zz-5gO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFQ-TY-qOf">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="258" y="401" width="35" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="sq2-59-kxF" kind="show" id="Nld-kZ-LgH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -392,6 +404,7 @@
                                 <exclude reference="gKH-YW-LXE"/>
                                 <exclude reference="cmV-fp-kIj"/>
                                 <exclude reference="b4O-bD-Xst"/>
+                                <exclude reference="eFQ-TY-qOf"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -407,6 +420,7 @@
                                 <include reference="gKH-YW-LXE"/>
                                 <include reference="cmV-fp-kIj"/>
                                 <include reference="b4O-bD-Xst"/>
+                                <include reference="eFQ-TY-qOf"/>
                             </mask>
                         </variation>
                     </view>
@@ -422,24 +436,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yaZ-rO-ZA9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="768" y="926"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="5GO-De-rkk">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G2C-cC-Lz6" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2UR-Y1-fU5" customClass="MainNavigationBar" customModule="Jeanine_IOS" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="sq2-59-kxF" kind="relationship" relationship="rootViewController" id="QVT-mR-4AV"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IVF-SP-vcb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="443" y="116"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="zVj-2D-PWr">
@@ -464,6 +460,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="QVT-mR-4AV"/>
+        <segue reference="Nld-kZ-LgH"/>
     </inferredMetricsTieBreakers>
 </document>
