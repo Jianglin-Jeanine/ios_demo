@@ -27,12 +27,12 @@ class signUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
         genderPicker.delegate = self
         genderPicker.dataSource = self
         genderTextField.delegate = self
         genderTextField.inputView = genderPicker
-        
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

@@ -17,16 +17,16 @@ class signInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
         var currentUser = AVUser.currentUser()
         if currentUser != nil {
             NSLog("Detected current user: %@", currentUser.username)
-            self.performSegueWithIdentifier("signInToProfile", sender: nil)
+            self.performSegueWithIdentifier("profileToMainView", sender: nil)
             NSLog("Redirecting to Profile Page")
         } else {
             NSLog("continue to sign in")
         }
-        
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,7 +38,7 @@ class signInViewController: UIViewController {
         AVUser.logInWithUsernameInBackground(usernameTextField.text, password: passwordTextField.text) { (user, error) -> Void in
             if user != nil {
                 NSLog("Signed In with user: %@", user.username)
-                self.performSegueWithIdentifier("signInToProfile", sender: nil)
+                self.performSegueWithIdentifier("profileToMainView", sender: nil)
                 NSLog("Redirecting to Profile Page")
             } else {
                 NSLog(error.localizedDescription)

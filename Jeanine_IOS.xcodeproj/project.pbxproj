@@ -24,7 +24,6 @@
 		7247BF3A1A605F50002B6795 /* exploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7247BF391A605F50002B6795 /* exploreViewController.swift */; };
 		7247BF3C1A605F67002B6795 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7247BF3B1A605F67002B6795 /* homeViewController.swift */; };
 		7247BF3E1A605F8C002B6795 /* shopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7247BF3D1A605F8C002B6795 /* shopViewController.swift */; };
-		7247BF401A60673D002B6795 /* MainNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7247BF3F1A60673D002B6795 /* MainNavigationBar.swift */; };
 		7287E0A71A59E90A007F0DF2 /* signInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7287E0A61A59E90A007F0DF2 /* signInViewController.swift */; };
 		7287E0A91A59E9A0007F0DF2 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7287E0A81A59E9A0007F0DF2 /* signUpViewController.swift */; };
 /* End PBXBuildFile section */
@@ -63,7 +62,6 @@
 		7247BF391A605F50002B6795 /* exploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exploreViewController.swift; sourceTree = "<group>"; };
 		7247BF3B1A605F67002B6795 /* homeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		7247BF3D1A605F8C002B6795 /* shopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shopViewController.swift; sourceTree = "<group>"; };
-		7247BF3F1A60673D002B6795 /* MainNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationBar.swift; sourceTree = "<group>"; };
 		7287E0A61A59E90A007F0DF2 /* signInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signInViewController.swift; sourceTree = "<group>"; };
 		7287E0A81A59E9A0007F0DF2 /* signUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,12 +117,11 @@
 				720CC7D21A59E5DB00E27DBB /* AppDelegate.swift */,
 				7287E0A61A59E90A007F0DF2 /* signInViewController.swift */,
 				7287E0A81A59E9A0007F0DF2 /* signUpViewController.swift */,
-				7247BF351A5F4082002B6795 /* profileViewController.swift */,
-				7247BF391A605F50002B6795 /* exploreViewController.swift */,
 				7247BF3B1A605F67002B6795 /* homeViewController.swift */,
+				7247BF391A605F50002B6795 /* exploreViewController.swift */,
+				7247BF351A5F4082002B6795 /* profileViewController.swift */,
 				7247BF3D1A605F8C002B6795 /* shopViewController.swift */,
 				720CC7D61A59E5DB00E27DBB /* Main.storyboard */,
-				7247BF3F1A60673D002B6795 /* MainNavigationBar.swift */,
 				720CC7D91A59E5DB00E27DBB /* Images.xcassets */,
 				720CC7DB1A59E5DB00E27DBB /* LaunchScreen.xib */,
 				720CC7D01A59E5DB00E27DBB /* Supporting Files */,
@@ -278,7 +275,6 @@
 				7287E0A71A59E90A007F0DF2 /* signInViewController.swift in Sources */,
 				7247BF3C1A605F67002B6795 /* homeViewController.swift in Sources */,
 				720CC7D31A59E5DB00E27DBB /* AppDelegate.swift in Sources */,
-				7247BF401A60673D002B6795 /* MainNavigationBar.swift in Sources */,
 				7247BF361A5F4082002B6795 /* profileViewController.swift in Sources */,
 				7247BF3A1A605F50002B6795 /* exploreViewController.swift in Sources */,
 				7287E0A91A59E9A0007F0DF2 /* signUpViewController.swift in Sources */,
