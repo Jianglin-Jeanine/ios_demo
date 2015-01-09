@@ -294,6 +294,8 @@
                     <connections>
                         <segue destination="YN5-SA-i8L" kind="relationship" relationship="viewControllers" id="F6h-JR-cda"/>
                         <segue destination="hex-i8-5rJ" kind="relationship" relationship="viewControllers" id="bwg-EZ-GYg"/>
+                        <segue destination="aEj-Af-a3x" kind="relationship" relationship="viewControllers" id="EW2-fL-8Yz"/>
+                        <segue destination="Slu-Jy-lX4" kind="relationship" relationship="viewControllers" id="6k7-Fx-Z6m"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JO5-Ad-cyy" userLabel="First Responder" sceneMemberID="firstResponder"/>

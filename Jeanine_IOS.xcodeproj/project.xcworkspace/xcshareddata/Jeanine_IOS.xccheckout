@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6CA0BD2B-3389-4E50-B478-243105EC6E6D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Jeanine_IOS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>14375796C7C5037FDE1532927469EF122C3ADAE5</key>
+		<string>github.com:Jianglin-Jeanine/ios_demo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Jeanine_IOS.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>14375796C7C5037FDE1532927469EF122C3ADAE5</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:Jianglin-Jeanine/ios_demo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>14375796C7C5037FDE1532927469EF122C3ADAE5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>14375796C7C5037FDE1532927469EF122C3ADAE5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Jeanine_IOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
