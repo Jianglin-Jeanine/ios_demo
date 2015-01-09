@@ -203,7 +203,6 @@
                         <outlet property="email" destination="mec-9n-I41" id="lX7-5H-t90"/>
                         <outlet property="gender" destination="u8R-IY-TGA" id="ysZ-fz-jz2"/>
                         <outlet property="username" destination="G3n-tX-KVL" id="1By-9F-0U4"/>
-                        <segue destination="sq2-59-kxF" kind="show" identifier="profileToSignIn" id="dGu-mH-9FL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hlt-DD-eqq" userLabel="First Responder" sceneMemberID="firstResponder"/>
