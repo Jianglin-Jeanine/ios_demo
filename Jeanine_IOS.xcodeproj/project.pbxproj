@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		720CC7D31A59E5DB00E27DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720CC7D21A59E5DB00E27DBB /* AppDelegate.swift */; };
+		720CC7D81A59E5DB00E27DBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 720CC7D61A59E5DB00E27DBB /* Main.storyboard */; };
+		720CC7DA1A59E5DB00E27DBB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 720CC7D91A59E5DB00E27DBB /* Images.xcassets */; };
+		720CC7DD1A59E5DB00E27DBB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720CC7DB1A59E5DB00E27DBB /* LaunchScreen.xib */; };
+		720CC7E91A59E5DB00E27DBB /* Jeanine_IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720CC7E81A59E5DB00E27DBB /* Jeanine_IOSTests.swift */; };
+		720CC7F41A59E63F00E27DBB /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720CC7F31A59E63F00E27DBB /* AVOSCloud.framework */; };
+		720CC7F61A59E65C00E27DBB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720CC7F51A59E65C00E27DBB /* SystemConfiguration.framework */; };
+		720CC7F81A59E66300E27DBB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720CC7F71A59E66300E27DBB /* MobileCoreServices.framework */; };
+		720CC7FA1A59E66F00E27DBB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720CC7F91A59E66F00E27DBB /* CoreTelephony.framework */; };
+		720CC7FC1A59E67400E27DBB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720CC7FB1A59E67400E27DBB /* CFNetwork.framework */; };
+		720CC7FE1A59E67A00E27DBB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720CC7FD1A59E67A00E27DBB /* CoreLocation.framework */; };
+		720CC80A1A59E81F00E27DBB /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 720CC8091A59E81F00E27DBB /* libicucore.dylib */; };
+		7247BF361A5F4082002B6795 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7247BF351A5F4082002B6795 /* profileViewController.swift */; };
+		7247BF381A604A06002B6795 /* MMDrawerController in Resources */ = {isa = PBXBuildFile; fileRef = 7247BF371A604A06002B6795 /* MMDrawerController */; };
+		7287E0A71A59E90A007F0DF2 /* signInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7287E0A61A59E90A007F0DF2 /* signInViewController.swift */; };
+		7287E0A91A59E9A0007F0DF2 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7287E0A81A59E9A0007F0DF2 /* signUpViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		720CC7E31A59E5DB00E27DBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 720CC7C51A59E5DB00E27DBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 720CC7CC1A59E5DB00E27DBB;
+			remoteInfo = Jeanine_IOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		720CC7CD1A59E5DB00E27DBB /* Jeanine_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jeanine_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		720CC7D11A59E5DB00E27DBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		720CC7D21A59E5DB00E27DBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		720CC7D71A59E5DB00E27DBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		720CC7D91A59E5DB00E27DBB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		720CC7DC1A59E5DB00E27DBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		720CC7E21A59E5DB00E27DBB /* Jeanine_IOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Jeanine_IOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		720CC7E71A59E5DB00E27DBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		720CC7E81A59E5DB00E27DBB /* Jeanine_IOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jeanine_IOSTests.swift; sourceTree = "<group>"; };
+		720CC7F31A59E63F00E27DBB /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AVOSCloud.framework; sourceTree = "<group>"; };
+		720CC7F51A59E65C00E27DBB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		720CC7F71A59E66300E27DBB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		720CC7F91A59E66F00E27DBB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		720CC7FB1A59E67400E27DBB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		720CC7FD1A59E67A00E27DBB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		720CC7FF1A59E67C00E27DBB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		720CC8081A59E73B00E27DBB /* Jeanine_IOS-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Jeanine_IOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		720CC8091A59E81F00E27DBB /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		7247BF351A5F4082002B6795 /* profileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
+		7247BF371A604A06002B6795 /* MMDrawerController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MMDrawerController; sourceTree = "<group>"; };
+		7287E0A61A59E90A007F0DF2 /* signInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signInViewController.swift; sourceTree = "<group>"; };
+		7287E0A81A59E9A0007F0DF2 /* signUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		720CC7CA1A59E5DB00E27DBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				720CC80A1A59E81F00E27DBB /* libicucore.dylib in Frameworks */,
+				720CC7FE1A59E67A00E27DBB /* CoreLocation.framework in Frameworks */,
+				720CC7FC1A59E67400E27DBB /* CFNetwork.framework in Frameworks */,
+				720CC7FA1A59E66F00E27DBB /* CoreTelephony.framework in Frameworks */,
+				720CC7F81A59E66300E27DBB /* MobileCoreServices.framework in Frameworks */,
+				720CC7F61A59E65C00E27DBB /* SystemConfiguration.framework in Frameworks */,
+				720CC7F41A59E63F00E27DBB /* AVOSCloud.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		720CC7DF1A59E5DB00E27DBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		720CC7C41A59E5DB00E27DBB = {
+			isa = PBXGroup;
+			children = (
+				720CC7F21A59E5E200E27DBB /* Frameworks */,
+				720CC7CF1A59E5DB00E27DBB /* Jeanine_IOS */,
+				720CC7E51A59E5DB00E27DBB /* Jeanine_IOSTests */,
+				720CC7CE1A59E5DB00E27DBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		720CC7CE1A59E5DB00E27DBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				720CC7CD1A59E5DB00E27DBB /* Jeanine_IOS.app */,
+				720CC7E21A59E5DB00E27DBB /* Jeanine_IOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		720CC7CF1A59E5DB00E27DBB /* Jeanine_IOS */ = {
+			isa = PBXGroup;
+			children = (
+				720CC8081A59E73B00E27DBB /* Jeanine_IOS-Bridging-Header.h */,
+				720CC7D21A59E5DB00E27DBB /* AppDelegate.swift */,
+				7287E0A61A59E90A007F0DF2 /* signInViewController.swift */,
+				7287E0A81A59E9A0007F0DF2 /* signUpViewController.swift */,
+				7247BF351A5F4082002B6795 /* profileViewController.swift */,
+				720CC7D61A59E5DB00E27DBB /* Main.storyboard */,
+				720CC7D91A59E5DB00E27DBB /* Images.xcassets */,
+				720CC7DB1A59E5DB00E27DBB /* LaunchScreen.xib */,
+				720CC7D01A59E5DB00E27DBB /* Supporting Files */,
+			);
+			path = Jeanine_IOS;
+			sourceTree = "<group>";
+		};
+		720CC7D01A59E5DB00E27DBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7247BF371A604A06002B6795 /* MMDrawerController */,
+				720CC7D11A59E5DB00E27DBB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		720CC7E51A59E5DB00E27DBB /* Jeanine_IOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				720CC7E81A59E5DB00E27DBB /* Jeanine_IOSTests.swift */,
+				720CC7E61A59E5DB00E27DBB /* Supporting Files */,
+			);
+			path = Jeanine_IOSTests;
+			sourceTree = "<group>";
+		};
+		720CC7E61A59E5DB00E27DBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				720CC7E71A59E5DB00E27DBB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		720CC7F21A59E5E200E27DBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				720CC8091A59E81F00E27DBB /* libicucore.dylib */,
+				720CC7FF1A59E67C00E27DBB /* CloudKit.framework */,
+				720CC7FD1A59E67A00E27DBB /* CoreLocation.framework */,
+				720CC7FB1A59E67400E27DBB /* CFNetwork.framework */,
+				720CC7F91A59E66F00E27DBB /* CoreTelephony.framework */,
+				720CC7F71A59E66300E27DBB /* MobileCoreServices.framework */,
+				720CC7F51A59E65C00E27DBB /* SystemConfiguration.framework */,
+				720CC7F31A59E63F00E27DBB /* AVOSCloud.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		720CC7CC1A59E5DB00E27DBB /* Jeanine_IOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 720CC7EC1A59E5DB00E27DBB /* Build configuration list for PBXNativeTarget "Jeanine_IOS" */;
+			buildPhases = (
+				720CC7C91A59E5DB00E27DBB /* Sources */,
+				720CC7CA1A59E5DB00E27DBB /* Frameworks */,
+				720CC7CB1A59E5DB00E27DBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jeanine_IOS;
+			productName = Jeanine_IOS;
+			productReference = 720CC7CD1A59E5DB00E27DBB /* Jeanine_IOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		720CC7E11A59E5DB00E27DBB /* Jeanine_IOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 720CC7EF1A59E5DB00E27DBB /* Build configuration list for PBXNativeTarget "Jeanine_IOSTests" */;
+			buildPhases = (
+				720CC7DE1A59E5DB00E27DBB /* Sources */,
+				720CC7DF1A59E5DB00E27DBB /* Frameworks */,
+				720CC7E01A59E5DB00E27DBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				720CC7E41A59E5DB00E27DBB /* PBXTargetDependency */,
+			);
+			name = Jeanine_IOSTests;
+			productName = Jeanine_IOSTests;
+			productReference = 720CC7E21A59E5DB00E27DBB /* Jeanine_IOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		720CC7C51A59E5DB00E27DBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Jianzhong Chen";
+				TargetAttributes = {
+					720CC7CC1A59E5DB00E27DBB = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					720CC7E11A59E5DB00E27DBB = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 720CC7CC1A59E5DB00E27DBB;
+					};
+				};
+			};
+			buildConfigurationList = 720CC7C81A59E5DB00E27DBB /* Build configuration list for PBXProject "Jeanine_IOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 720CC7C41A59E5DB00E27DBB;
+			productRefGroup = 720CC7CE1A59E5DB00E27DBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				720CC7CC1A59E5DB00E27DBB /* Jeanine_IOS */,
+				720CC7E11A59E5DB00E27DBB /* Jeanine_IOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		720CC7CB1A59E5DB00E27DBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				720CC7D81A59E5DB00E27DBB /* Main.storyboard in Resources */,
+				7247BF381A604A06002B6795 /* MMDrawerController in Resources */,
+				720CC7DD1A59E5DB00E27DBB /* LaunchScreen.xib in Resources */,
+				720CC7DA1A59E5DB00E27DBB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		720CC7E01A59E5DB00E27DBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		720CC7C91A59E5DB00E27DBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7287E0A71A59E90A007F0DF2 /* signInViewController.swift in Sources */,
+				720CC7D31A59E5DB00E27DBB /* AppDelegate.swift in Sources */,
+				7247BF361A5F4082002B6795 /* profileViewController.swift in Sources */,
+				7287E0A91A59E9A0007F0DF2 /* signUpViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		720CC7DE1A59E5DB00E27DBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				720CC7E91A59E5DB00E27DBB /* Jeanine_IOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		720CC7E41A59E5DB00E27DBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 720CC7CC1A59E5DB00E27DBB /* Jeanine_IOS */;
+			targetProxy = 720CC7E31A59E5DB00E27DBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		720CC7D61A59E5DB00E27DBB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				720CC7D71A59E5DB00E27DBB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		720CC7DB1A59E5DB00E27DBB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				720CC7DC1A59E5DB00E27DBB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		720CC7EA1A59E5DB00E27DBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		720CC7EB1A59E5DB00E27DBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		720CC7ED1A59E5DB00E27DBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Jeanine_IOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Jeanine_IOS/Jeanine_IOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		720CC7EE1A59E5DB00E27DBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Jeanine_IOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Jeanine_IOS/Jeanine_IOS-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		720CC7F01A59E5DB00E27DBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Jeanine_IOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jeanine_IOS.app/Jeanine_IOS";
+			};
+			name = Debug;
+		};
+		720CC7F11A59E5DB00E27DBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Jeanine_IOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jeanine_IOS.app/Jeanine_IOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		720CC7C81A59E5DB00E27DBB /* Build configuration list for PBXProject "Jeanine_IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				720CC7EA1A59E5DB00E27DBB /* Debug */,
+				720CC7EB1A59E5DB00E27DBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		720CC7EC1A59E5DB00E27DBB /* Build configuration list for PBXNativeTarget "Jeanine_IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				720CC7ED1A59E5DB00E27DBB /* Debug */,
+				720CC7EE1A59E5DB00E27DBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		720CC7EF1A59E5DB00E27DBB /* Build configuration list for PBXNativeTarget "Jeanine_IOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				720CC7F01A59E5DB00E27DBB /* Debug */,
+				720CC7F11A59E5DB00E27DBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 720CC7C51A59E5DB00E27DBB /* Project object */;
+}
