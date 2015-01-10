@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sq2-59-kxF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9vW-7a-C7I">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="v9H-zU-FDl">
+            <objects>
+                <viewController id="9vW-7a-C7I" customClass="rootViewController" customModule="Jeanine_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y0H-WG-ulU"/>
+                        <viewControllerLayoutGuide type="bottom" id="SIo-Gr-XwC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OIB-PL-OSB">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="sq2-59-kxF" kind="show" id="i6r-1m-YrF"/>
+                        <segue destination="XIA-7b-9wm" kind="show" identifier="rootToMainView" id="Jj7-jz-eMf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eEh-QU-Goj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="684" y="-288"/>
+        </scene>
         <!--Sign In View Controller-->
         <scene sceneID="cl6-em-3hP">
             <objects>
@@ -213,10 +234,10 @@
             </objects>
             <point key="canvasLocation" x="4018.5" y="777"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="Juh-4k-Zbc">
             <objects>
-                <viewController id="gcf-f0-rTe" sceneMemberID="viewController">
+                <viewController id="gcf-f0-rTe" customClass="homeViewController" customModule="Jeanine_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tMb-OS-zWo"/>
                         <viewControllerLayoutGuide type="bottom" id="dYD-3b-2x3"/>
@@ -224,14 +245,40 @@
                     <view key="view" contentMode="scaleToFill" id="4vA-6w-45K">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="PYg-7O-197">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-200" y="0.0" width="200" height="600"/>
+                                </variation>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="PYg-7O-197"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="PYg-7O-197"/>
+                            </mask>
+                        </variation>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="7NH-BJ-yZs">
-                        <barButtonItem key="leftBarButtonItem" title="菜" id="bBj-6h-PHu"/>
+                        <barButtonItem key="leftBarButtonItem" title="菜" id="bBj-6h-PHu">
+                            <connections>
+                                <action selector="menuClicked:" destination="gcf-f0-rTe" id="Eah-O8-eQY"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="+" id="tsZ-yo-M1g"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="sideMenu" destination="PYg-7O-197" id="EkQ-lj-ZzW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vZi-MK-FXw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -248,7 +295,26 @@
                     <view key="view" contentMode="scaleToFill" id="exL-H3-g61">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4bU-At-9vW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="64" width="400" height="600"/>
+                                </variation>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="4bU-At-9vW"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="4bU-At-9vW"/>
+                            </mask>
+                        </variation>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="9g4-sg-uAm">
@@ -553,6 +619,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5Ra-as-eRj"/>
+        <segue reference="Jj7-jz-eMf"/>
+        <segue reference="i6r-1m-YrF"/>
     </inferredMetricsTieBreakers>
 </document>

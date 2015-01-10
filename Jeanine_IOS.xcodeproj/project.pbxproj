@@ -20,10 +20,10 @@
 		720CC7FE1A59E67A00E27DBB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720CC7FD1A59E67A00E27DBB /* CoreLocation.framework */; };
 		720CC80A1A59E81F00E27DBB /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 720CC8091A59E81F00E27DBB /* libicucore.dylib */; };
 		7247BF361A5F4082002B6795 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7247BF351A5F4082002B6795 /* profileViewController.swift */; };
-		7247BF381A604A06002B6795 /* MMDrawerController in Resources */ = {isa = PBXBuildFile; fileRef = 7247BF371A604A06002B6795 /* MMDrawerController */; };
 		7247BF3A1A605F50002B6795 /* exploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7247BF391A605F50002B6795 /* exploreViewController.swift */; };
 		7247BF3C1A605F67002B6795 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7247BF3B1A605F67002B6795 /* homeViewController.swift */; };
 		7247BF3E1A605F8C002B6795 /* shopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7247BF3D1A605F8C002B6795 /* shopViewController.swift */; };
+		7247BF461A60A9A9002B6795 /* rootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7247BF451A60A9A9002B6795 /* rootViewController.swift */; };
 		7287E0A71A59E90A007F0DF2 /* signInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7287E0A61A59E90A007F0DF2 /* signInViewController.swift */; };
 		7287E0A91A59E9A0007F0DF2 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7287E0A81A59E9A0007F0DF2 /* signUpViewController.swift */; };
 /* End PBXBuildFile section */
@@ -58,10 +58,10 @@
 		720CC8081A59E73B00E27DBB /* Jeanine_IOS-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Jeanine_IOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		720CC8091A59E81F00E27DBB /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		7247BF351A5F4082002B6795 /* profileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
-		7247BF371A604A06002B6795 /* MMDrawerController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MMDrawerController; sourceTree = "<group>"; };
 		7247BF391A605F50002B6795 /* exploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exploreViewController.swift; sourceTree = "<group>"; };
 		7247BF3B1A605F67002B6795 /* homeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		7247BF3D1A605F8C002B6795 /* shopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shopViewController.swift; sourceTree = "<group>"; };
+		7247BF451A60A9A9002B6795 /* rootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rootViewController.swift; sourceTree = "<group>"; };
 		7287E0A61A59E90A007F0DF2 /* signInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signInViewController.swift; sourceTree = "<group>"; };
 		7287E0A81A59E9A0007F0DF2 /* signUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +115,7 @@
 			children = (
 				720CC8081A59E73B00E27DBB /* Jeanine_IOS-Bridging-Header.h */,
 				720CC7D21A59E5DB00E27DBB /* AppDelegate.swift */,
+				7247BF451A60A9A9002B6795 /* rootViewController.swift */,
 				7287E0A61A59E90A007F0DF2 /* signInViewController.swift */,
 				7287E0A81A59E9A0007F0DF2 /* signUpViewController.swift */,
 				7247BF3B1A605F67002B6795 /* homeViewController.swift */,
@@ -132,7 +133,6 @@
 		720CC7D01A59E5DB00E27DBB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7247BF371A604A06002B6795 /* MMDrawerController */,
 				720CC7D11A59E5DB00E27DBB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -251,7 +251,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				720CC7D81A59E5DB00E27DBB /* Main.storyboard in Resources */,
-				7247BF381A604A06002B6795 /* MMDrawerController in Resources */,
 				720CC7DD1A59E5DB00E27DBB /* LaunchScreen.xib in Resources */,
 				720CC7DA1A59E5DB00E27DBB /* Images.xcassets in Resources */,
 			);
@@ -277,6 +276,7 @@
 				720CC7D31A59E5DB00E27DBB /* AppDelegate.swift in Sources */,
 				7247BF361A5F4082002B6795 /* profileViewController.swift in Sources */,
 				7247BF3A1A605F50002B6795 /* exploreViewController.swift in Sources */,
+				7247BF461A60A9A9002B6795 /* rootViewController.swift in Sources */,
 				7287E0A91A59E9A0007F0DF2 /* signUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,11 +8,14 @@
 
 import UIKit
 
-class homeViewController: UIViewController {
+class homeViewController: UIViewController, UITableViewDelegate {
 
+    @IBOutlet weak var sideMenu: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        sideMenu.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -21,6 +24,13 @@ class homeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func menuClicked(sender: AnyObject) {
+        self.navigationController?.navigationBar.frame.origin.x += 200
+        self.view.frame.origin.x += 200
+        self.tabBarController?.tabBar.frame.origin.x += 200
+        sideMenu.frame.origin.x += 200
+        
+    }
 
     /*
     // MARK: - Navigation
