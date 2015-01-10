@@ -13,11 +13,12 @@
                         <viewControllerLayoutGuide type="bottom" id="SIo-Gr-XwC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OIB-PL-OSB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="sq2-59-kxF" kind="show" id="i6r-1m-YrF"/>
+                        <segue destination="sq2-59-kxF" kind="show" identifier="rootToSignIn" id="i6r-1m-YrF"/>
                         <segue destination="XIA-7b-9wm" kind="show" identifier="rootToMainView" id="Jj7-jz-eMf"/>
                     </connections>
                 </viewController>
@@ -270,7 +271,7 @@
                     <navigationItem key="navigationItem" id="7NH-BJ-yZs">
                         <barButtonItem key="leftBarButtonItem" title="菜" id="bBj-6h-PHu">
                             <connections>
-                                <action selector="menuClicked:" destination="gcf-f0-rTe" id="Eah-O8-eQY"/>
+                                <action selector="sideBarToggle:" destination="gcf-f0-rTe" id="5k9-9w-tje"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="+" id="tsZ-yo-M1g"/>
@@ -525,6 +526,7 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="XIA-7b-9wm" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="EIO-1b-eMm"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="55f-aT-PYb">
                         <autoresizingMask key="autoresizingMask"/>
@@ -539,12 +541,12 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Apb-JF-bem" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2095.5" y="548"/>
+            <point key="canvasLocation" x="2197.5" y="788"/>
         </scene>
         <!--Home-->
         <scene sceneID="f8U-A5-8eA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aWh-8K-kM3" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aWh-8K-kM3" customClass="sideBarNavigationController" customModule="Jeanine_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" id="KnV-cO-mOn"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tj6-Pm-gSj">
@@ -563,7 +565,7 @@
         <!--Explore-->
         <scene sceneID="F50-oV-9aP">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dcb-eS-Fem" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dcb-eS-Fem" customClass="sideBarNavigationController" customModule="Jeanine_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Explore" id="OdN-bY-bQO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5oD-22-ByZ">
@@ -582,7 +584,7 @@
         <!--Profile-->
         <scene sceneID="LTS-b3-red">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GRW-gB-RhI" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GRW-gB-RhI" customClass="sideBarNavigationController" customModule="Jeanine_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" id="kO3-sc-LAZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dfX-D2-i0f">
@@ -601,7 +603,7 @@
         <!--Shop-->
         <scene sceneID="jie-eJ-7Xa">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="28o-57-owO" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="28o-57-owO" customClass="sideBarNavigationController" customModule="Jeanine_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Shop" id="Fvv-5c-GFh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yq8-LX-0RI">

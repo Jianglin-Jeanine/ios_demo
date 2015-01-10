@@ -21,7 +21,7 @@ class rootViewController: UIViewController {
         if currentUser != nil {
             NSLog("Detected current user: %@", currentUser.username)
             self.performSegueWithIdentifier("rootToMainView", sender: nil)
-            NSLog("Redirecting to Profile Page")
+            NSLog("Redirecting to Main Page")
         } else {
             self.performSegueWithIdentifier("rootToSignIn", sender: nil)
             NSLog("continue to sign in")

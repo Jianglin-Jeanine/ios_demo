@@ -15,7 +15,6 @@ class homeViewController: UIViewController, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        sideMenu.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -23,15 +22,11 @@ class homeViewController: UIViewController, UITableViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func menuClicked(sender: AnyObject) {
-        self.navigationController?.navigationBar.frame.origin.x += 200
-        self.view.frame.origin.x += 200
-        self.tabBarController?.tabBar.frame.origin.x += 200
-        sideMenu.frame.origin.x += 200
-        
-    }
 
+    @IBAction func sideBarToggle(sender: AnyObject) {
+        toggleSideMenuView()
+        self.tabBarController?.tabBar.frame.origin.x
+    }
     /*
     // MARK: - Navigation
 
