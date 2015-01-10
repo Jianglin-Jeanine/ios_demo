@@ -10,7 +10,6 @@ import UIKit
 
 class homeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var sideMenu: UITableView!
     @IBOutlet weak var myTableView: UITableView!
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -22,6 +21,7 @@ class homeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let target = targets[indexPath.row]
         let cell: homeTableViewCell = tableView.dequeueReusableCellWithIdentifier("homeCell") as homeTableViewCell
         cell.update(target.name, image:target.image, time: target.time, like: target.like, comment: target.comment)
+        cell.frame = CGRectMake(cell.frame.origin.x, cell.frame.origin.x, 100, cell.frame.height)
         return cell
     }
 
@@ -50,6 +50,18 @@ class homeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        var n1 = self.navigationController?.navigationBar.frame.height
+        var n2 = self.navigationController?.navigationBar.frame.origin.y
+        var n3 = self.tabBarController?.tabBar.frame.origin.y
+        let y:CGFloat = n1! + n2!
+        let w:CGFloat = self.view.frame.width
+        let h:CGFloat = n3! - y
+        self.myTableView.frame = CGRectMake(0, y, w, h)
+    }
+    
+        
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
